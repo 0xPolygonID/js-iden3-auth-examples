@@ -50,7 +50,7 @@ async function main() {
 
   const resolvers: resolver.Resolvers = {
     'privado:main': new resolver.EthStateResolver("https://rpc-mainnet.privado.id","0x3C9acB2205Aa72A05F6D77d708b5Cf85FCa3a896"),
-    'polygon:amoy': new resolver.EthStateResolver("https://polygon-amoy.g.alchemy.com/v2/cfrPy3MWpxG_7ZO_WnAQYEtSET4QTh0D", "0x1a4cC30f2aA0377b0c3bc9848766D90cb4404124"),
+    'polygon:amoy': new resolver.EthStateResolver("<RPC-URL>", "0x1a4cC30f2aA0377b0c3bc9848766D90cb4404124"),
   };
   const verifier = await auth.Verifier.newVerifier({
     stateResolver: resolvers,
