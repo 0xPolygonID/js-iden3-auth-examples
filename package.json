@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "tsc-alias": "^1.8.7",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@0xpolygonid/js-sdk": "^1.28.0",
+    "@digitalbazaar/x25519-key-agreement-key-2019": "^6.0.0",
+    "@iden3/js-iden3-auth": "^1.9.0",
+    "@iden3/js-iden3-core": "^1.4.1",
+    "@privacyresearch/curve25519-typescript": "^0.0.12",
+    "base64url": "^3.0.1",
+    "cache-manager": "^5.2.3",
+    "eip-712-types-generation": "^0.1.6",
+    "express": "^4.18.2",
+    "http-status-codes": "^2.2.0",
+    "jose": "^6.0.10",
+    "mocha": "^10.7.3",
+    "path": "^0.12.7",
+    "uuid": "^9.0.0",
+    "vitest": "^0.33.0"
+  }
+}
