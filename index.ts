@@ -36,11 +36,10 @@ async function createVerificationRequest(
           },
           query: {
             allowedIssuers: [
-              "did:iden3:privado:main:2ScrbEuw9jLXMapW3DELXBbDco5EURzJZRN1tYj7L7",
+              "did:iden3:billions:main:2VqNr7pb8Gh9BivhNNxEniRSHZE9oyuAZvCdP4BRtY",
             ],
-            context:
-              "https://raw.githubusercontent.com/anima-protocol/claims-polygonid/main/schemas/json-ld/pou-v1.json-ld",
-            type: "AnimaProofOfUniqueness",
+            context: "ipfs://QmcUEDa42Er4nfNFmGQVjiNYFaik6kvNQjfTeBrdSx83At",
+            type: "UniquenessCredential",
           },
         },
       ],
@@ -61,6 +60,10 @@ async function verifyProof(
   const resolvers: resolver.Resolvers = {
     "privado:main": new resolver.EthStateResolver(
       "https://rpc-mainnet.privado.id",
+      "0x3C9acB2205Aa72A05F6D77d708b5Cf85FCa3a896"
+    ),
+    "billions:main": new resolver.EthStateResolver(
+      "https://rpc-mainnet.billions.network",
       "0x3C9acB2205Aa72A05F6D77d708b5Cf85FCa3a896"
     ),
   };
